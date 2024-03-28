@@ -53,10 +53,10 @@
                     <td>{{$item->MontoPatrocinado}}</td>
                     <td>{{$item->MontoFondosPropios}}</td>
                     <td>
+                        <a href="{{ route('generate.pdf', $item->Id) }}" class="btn btn-danger" role="button" target="_blank"><i class="fas fa-file-pdf"></i></a>
                         <a class="btn btn-info" role="button" data-bs-toggle="modal" href="#readModalToggle{{$item->Id}}"><i class="fas fa-eye"></i></a>
                         <a class="btn btn-warning" role="button" data-bs-toggle="modal" href="#updateModalToggle{{$item->Id}}"><i class="fas fa-pen"></i></a>
                         <a class="btn btn-danger" data-bs-toggle="modal" href="#deleteModalToggle{{$item->Id}}" role="button"><i class="fas fa-trash"></i></a>
-                        <a class="btn btn-danger" role="button"><i class="fas fa-file-pdf"></i></a>
                     </td>
                 </tr>
                 @endforeach
