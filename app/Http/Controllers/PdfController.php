@@ -13,12 +13,11 @@ class PdfController extends Controller
         try {
             $projects = DB::select("SELECT * FROM proyectos where Id = $id");
         } catch (\Exception $e) {
-            return response()->json(['error' => 'Error al obtener los datos de los proyectos'], 500);
+            return back()->with("error", "Ocurrio un error.");
         }
 
         $data = [
             'title' => 'Gobierno de El Salvador',
-            'institution' => 'Don Bosco',
             'date' => date('d/m/Y'),
             'proyectos' => $projects
         ];

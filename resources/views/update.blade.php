@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="updateModalToggleLabel{{$item->Id}}">Update</h5> 
+                <h5 class="modal-title" id="updateModalToggleLabel{{$item->Id}}">Actualizar</h5> 
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -31,7 +31,7 @@
                         <input type="number" step="0.01" min="0" class="form-control" name="MontoFondosPropios" value="{{$item->MontoFondosPropios}}" required>
                     </div>
                     <div class="modal-footer">
-                        <button  class="btn btn-warning" type="submit">Update</button>
+                        <button  class="btn btn-warning" type="submit">Actualizar</button>
                     </div>
                 </form>
             </div>
